@@ -12,7 +12,7 @@ const DropdownArrow = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const isMobile=useViewport()
-console.log(isMobile);
+
 
   return (
     <>
