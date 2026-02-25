@@ -21,7 +21,7 @@ const DropdownArrow = ({
         onMouseEnter={() => setIsOpen(()=>isMobile ? false : true)}
         onMouseLeave={() => setIsOpen(()=>isMobile ? false : false)}
 
-        className={`flex  justify-between  lg:justify-center w-[90vw] lg:w-auto transition-colors items-center h-[30px] lg:pb-5 relative  ${bgColor} ${textSize} ${textColor} hover:opacity-80`}
+        className={`flex  justify-between  lg:h-10 lg:justify-center w-[90vw] lg:w-auto transition-colors items-center h-[30px]  lg:pb-5 relative  ${bgColor} ${textSize} ${textColor} hover:opacity-80`}
       >
         <span className=" hover:text-blue-400">{label}</span>
 

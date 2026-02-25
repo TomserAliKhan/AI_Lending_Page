@@ -1,14 +1,19 @@
 import React from "react";
+import { br1, br2, br3, br4, br5, br6, br7, heroDarkImg, heroImg } from "../assets";
+import { useTheme } from "next-themes";
 
 
 const Herosection = () => {
+  const { theme, setTheme } = useTheme();
+  let  HeroImg = theme === "dark" ? heroDarkImg : heroImg;
+    
     return (
-        <main>
-            <section>
+        <main className=" ">
+            <section >
                 <div className="mt-16  w-full ">
-                    <div className="w-[800px] mx-auto flex flex-col justify-center items-center ">
+                    <div className="lg:w-[650px] mx-auto flex flex-col justify-center items-center ">
                         <span className="rounded-full p-[1px] bg-gradient-to-r from-pink-500 to-purple-500">
-                            <span className="flex gap-3 bg-white dark:bg-gray-900 rounded-full overflow-hidden px-4 py-2 items-center">
+                            <span className="flex text-[10px]  gap-3 bg-white dark:bg-gray-900 rounded-full overflow-hidden px-4 py-2 items-center">
                                 <svg
                                     width="22"
                                     height="22"
@@ -56,19 +61,19 @@ const Herosection = () => {
                                 <span>Powerful AI Kit for Ai Products,Tools and Startups</span>
                             </span>
                         </span>
-                        <div className="text-center mt-5">
-                            <h1 className="text-gray-700 mx-auto  font-bold mb-4 text-4xl sm:text-[50px] dark:text-white/90 sm:leading-[64px] max-w-[700px]">
+                        <div className="text-center mt-5 ">
+                            <h1 className="text-gray-700  mx-auto  font-bold mb-4 text-4xl sm:text-[50px] text-[30px] dark:text-white/90 lg:leading-[64px]  sm:leading-[64px] max-w-[700px]  lg:max-w-[700px] leading-10">
                                 AI UI Kit and Templates for Tailwind CSS and Figma
                             </h1>
                         </div>
-                        <div className="w-[550px] text-center">
-                            <h2 className="leading-5 text-md">Transform Your Vision into Reality:Unleash Your Creativity and Build Cutting-Edge AI Startups,Tools, and Products with Our Powerful AI Agent UI Kit, Designed to Streamline Development and AI Innovation.View Tools Watch Intro
+                        <div className="lg:w-[500px]  mx-auto sm:text-[13px] lg:text-[18px]   ">
+                            <h2 className="max-w-[537px] text-center mx-auto dark:text-gray-400 text-gray-500 text-base">Transform Your Vision into Reality:Unleash Your Creativity and Build Cutting-Edge AI Startups,Tools, and Products with Our Powerful AI Agent UI Kit, Designed to Streamline Development and AI Innovation.
 
                             </h2>
                         </div>
 
-                        <div className="flex gap-4 my-7">
-                            <button className="bg-[#7a5af8]  rounded-full px-5">View Tools</button>
+                        <div className="flex gap-4 my-7 mb-16 flex-col md:flex-row justify-center items-center">
+                            <button className="bg-[#7a5af8] py-3 rounded-full px-7">View Tools</button>
                             <button className="border border-gray-500 bg-gray-600/50 flex items-center justify-start gap-2 py-2 rounded-full px-3">
                                 <span className="bg-[#7a5af8] p-2 self-start rounded-full">
                                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +84,33 @@ const Herosection = () => {
                         </div>
                     </div>
                 </div>
+
+              <div className=" relative w-full flex justify-center flex-col ">
+
+                <img className="h-auto rounded-3xl border-[8px] border-gray-400/60 w-[80vw] mx-auto" src={HeroImg} alt="hero image" />
+                <h1 className="text-[20px] lg:text-2xl text-white/30  mt-8 text-center leading-5  mx-auto ">Trusted by worlds largest companies including...</h1>
+
+
+                <div className="flex flex-wrap mx-5 my-10 justify-center items-center lg:gap-16  gap-7">
+                    
+                    <img src={br1} alt="spotify" className="opacity-50 transition hover:opacity-100" />
+                    <img src={br2} alt="spotify" className="opacity-50 transition hover:opacity-100"/>
+                    <img src={br3} alt="spotify" className="opacity-50 transition hover:opacity-100"/>
+                    <img src={br4} alt="spotify" className="opacity-50 transition hover:opacity-100" />
+                    <img src={br5} alt="spotify" className="opacity-50 transition hover:opacity-100" />
+                    <img src={br6} alt="spotify" className="opacity-50 transition hover:opacity-100" />
+                    <img src={br7} alt="spotify" className="opacity-50 transition hover:opacity-100" />
+                </div>
+
+
+
+                  <div className="hero-glow-bg absolute bottom-0 left-0 w-full h-full -z-10">
+        
+                </div>
+              </div>
+
             </section>
+          
         </main>
     );
 };

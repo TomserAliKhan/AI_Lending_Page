@@ -20,7 +20,9 @@ const Navebar = () => {
   return (
     <>      
     
-      <nav className="flex font-lato  px-5 items-center h-[70px] ps-5 border-b justify-between ">
+      <nav className="flex font-lato bg-white dark:bg-gray-800  px-5 sticky top-0 w-full items-center h-[70px] ps-5 
+      border-b-[1px] border-gray-300 dark:border-gray-500
+      justify-between ">
         <div className=" cursor-pointer " >
           <Link to='/' ><img className="h-25 w-25" src={logo} alt="logo" /></Link>
         </div>
@@ -36,7 +38,7 @@ const Navebar = () => {
          {
           navdata.map((item,index)=>{
             return(
-              <div key={index}  className="">
+              <div key={index}  >
                 {
                   item.subdata && item.subdata.length >0 ? <DropdownArrow label={item.label} data={item.subdata}/>:(<Link className=" cursor-pointer lg:hover:text-blue-400" to={item.link}>{item.label}</Link>)
                 }
@@ -52,7 +54,7 @@ const Navebar = () => {
 
 
         <div className="flex items-center gap-7 pr-5 lg:text-sm" >
-          <span className="h-10 border rounded-full  hover:bg-gray-400/10 w-10 flex justify-center">
+          <span className="h-10 dark:border-none border rounded-full  hover:bg-gray-400/10 w-10 flex justify-center">
             {theme == "dark" ? (
             <button onClick={() => setTheme("light")}>
               <RiSunLine size={'25px'} />
