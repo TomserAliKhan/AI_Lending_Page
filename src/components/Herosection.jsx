@@ -91,7 +91,7 @@ const Herosection = () => {
                 <h1 className="text-[20px] lg:text-2xl text-white/30  mt-8 text-center leading-5  mx-auto ">Trusted by worlds largest companies including...</h1>
 
 
-                <div className="flex flex-wrap mx-5 my-10 justify-center items-center lg:gap-16  gap-7">
+                <div className="flex flex-wrap mx-5 my-10 justify-center items-center lg:gap-16 pb-14  gap-7">
                     
                     <img src={br1} alt="spotify" className="opacity-50 transition hover:opacity-100" />
                     <img src={br2} alt="spotify" className="opacity-50 transition hover:opacity-100"/>
