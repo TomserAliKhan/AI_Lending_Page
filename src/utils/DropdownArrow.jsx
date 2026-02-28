@@ -51,7 +51,7 @@ const DropdownArrow = ({
             if (item.img)
               return (
                 <Link to={item.link} 
-                className="flex items-center lg:w-22 lg:h-10 gap-2 lg:my-2 lg:ps-8 lg:py-2 lg:hover:bg-gray-100 dark:lg:hover:bg-gray-700">
+                className="flex items-center lg:w-22 lg:h-10  lg:my-2 lg:ps-8 lg:py-2 lg:hover:bg-gray-100 dark:lg:hover:bg-gray-700">
                   <img key={i} src={item.img} alt={item.text || `item-${i}`} />
                   <span>{item.text}</span>
                 </Link>

@@ -20,7 +20,7 @@ const Navebar = () => {
   return (
     <>      
     
-      <nav className="flex font-lato bg-white dark:bg-gray-800  px-5 sticky top-0 w-full items-center h-[70px] ps-5 
+      <nav className="flex font-lato z-50 bg-white dark:bg-gray-800  px-5 sticky top-0 w-full items-center h-[70px] ps-5 
       border-b-[1px] border-gray-300 dark:border-gray-500
       justify-between ">
         <div className=" cursor-pointer " >
@@ -86,11 +86,12 @@ const Navebar = () => {
 
 
           {/* phone menue */}
-      <section className="mx-5 mt-3 lg:hidden ">
-          {hamburger==true ?  (<span className=" flex flex-col font-lato   text-lg "> {
+      <section className={`mx-auto mt-3 lg:hidden fixed text-sm top-[60px] left-0 right-0 bg-white dark:bg-gray-800  rounded-lg  border-gray-300 dark:border-gray-900 p-5
+        z-50 ${hamburger ? 'block' : 'hidden'}`} >
+          {hamburger==true ?  (<span className=" flex flex-col font-lato  gap-2  "> {
               navdata.map((item,i)=>{
                 return(
-            <div key={i} className="py-1" >
+            <div key={i} className="" >
 
               {
               
@@ -103,7 +104,7 @@ const Navebar = () => {
 
                 <Link to={'/sign-in'}>
                   <button
-                    className="h-12 w-44 text-xl rounded-[40px] ms-3 mt-6 text-white bg-[#8676ff]"
+                    className="h-10 w-[140px] text-md rounded-[40px] ms-3 mt-6 text-white bg-[#8676ff]"
                   >
                     Get Started Free {/* Hardcoded CTA label */}
                   </button>

@@ -35,7 +35,7 @@ const Features = () => {
             p: "Partner with AI to create content that connects with your audience. Give it a try now."
         }]
     return (
-        <div className='flex flex-col justify-center items-center mx-auto'>
+        <div className='flex flex-col justify-center items-center mx-auto mb-20'>
             <div className='w-full py-28'>
                 <h1 className='text-center text-gray-800  dark:text-white/80 md:text-5xl  text-4xl lg:  font-bold'>Core Features</h1>
                 <p className="text-center w-full max-w-xl  mx-auto dark:text-gray-400 py-5  text-gray-500">Unlock the Potential of Innovation. Discover the Advanced AI
@@ -46,10 +46,10 @@ const Features = () => {
             <div className=' justify-start items-center gap-6 lg:mx-5 lg:gap-20 grid grid-cols-1 md:grid-cols-2 '>
                 {features.map((item, index) => {
                     return (
-                        <div key={index} className='rounded-xl  shadow-lg p-9 border px-10   max-w-2xl h-full flex flex-col justify-center items-start '>
+                        <div key={index} className='rounded-xl  shadow-lg p-9 border dark:border-gray-500/70 px-10   max-w-2xl h-full flex flex-col justify-center items-start '>
                             <span className='h-20 mt-6 flex justify-center items-center w-20 rounded-full  icon-glow-bg'>
                                 <img className='h-13 w-auto' src={item.img} alt="" /></span>
-                            <h2 className=" text-gray-800 dark:text-white/80  text-xl py-6 font-bold ">{item.h2}</h2>
+                            <h2 className="lg:text-2xl text-gray-800 dark:text-white/80  text-xl py-6 font-bold ">{item.h2}</h2>
                             <p className=" dark:text-gray-400 text-gray-500">{item.p}    </p>
                         </div>
                     )

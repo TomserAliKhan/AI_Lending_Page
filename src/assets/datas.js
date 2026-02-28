@@ -1,4 +1,4 @@
-import { code, email, imgIcon, message, video } from ".";
+import { code, email, imgIcon, message, tabImage1, tabImage1Dark, tabImage2, tabImage2Dark, tabImage3, tabImage3Dark, tabImage4, tabImage4Dark, tabImage5, tabImage5Dark, video } from ".";
 
 export let navdata=[
   {label:"Home",link:"/home", subdata:[]},
@@ -25,3 +25,12 @@ export let navdata=[
   
 
 ]
+
+
+export let fingurtipdata=[
+    {img:message,text:"Text Generator",path:tabImage1, darkPath: tabImage1Dark},
+    {img:imgIcon,text:"Image Generator",path:tabImage2, darkPath: tabImage2Dark},
+     {img:code,text:"Code Generator",path:tabImage3, darkPath: tabImage3Dark},
+    {img:video,text:"Video Generator",path:tabImage4, darkPath: tabImage4Dark},
+    {img:email,text:"Email Generator", path:tabImage5, darkPath: tabImage5Dark}
+  ]

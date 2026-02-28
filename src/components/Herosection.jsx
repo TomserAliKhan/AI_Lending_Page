@@ -4,9 +4,9 @@ import { useTheme } from "next-themes";
 
 
 const Herosection = () => {
-  const { theme, setTheme } = useTheme();
-  let  HeroImg = theme === "dark" ? heroDarkImg : heroImg;
-    
+    const { theme, setTheme } = useTheme();
+    let HeroImg = theme === "dark" ? heroDarkImg : heroImg;
+
     return (
         <main className=" ">
             <section >
@@ -73,8 +73,8 @@ const Herosection = () => {
                         </div>
 
                         <div className="flex gap-4 my-7 mb-16 flex-col md:flex-row justify-center items-center">
-                            <button className="bg-[#7a5af8] py-3 rounded-full px-7">View Tools</button>
-                            <button className="border border-gray-500 bg-gray-600/50 flex items-center justify-start gap-2 py-2 rounded-full px-3">
+                            <button className="bg-[#7a5af8] py-3 rounded-full text-white px-7">View Tools</button>
+                            <button className=" dark:border-0  border-[0.5px] dark:bg-gray-600/20 flex items-center justify-start gap-2 py-2 rounded-full px-3">
                                 <span className="bg-[#7a5af8] p-2 self-start rounded-full">
                                     <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M3.5 3.71077L3.5 12.3482C3.5 13.5211 4.78545 14.2402 5.78489 13.6265L12.8183 9.30776C13.7717 8.7223 13.7717 7.33672 12.8183 6.75125L5.7849 2.43251C4.78545 1.81882 3.5 2.53795 3.5 3.71077Z" fill="white"></path>
@@ -85,32 +85,32 @@ const Herosection = () => {
                     </div>
                 </div>
 
-              <div className=" relative w-full flex justify-center flex-col ">
+                <div className=" relative w-full   flex justify-center flex-col ">
 
-                <img className="h-auto rounded-3xl border-[8px] border-gray-400/60 w-[80vw] mx-auto" src={HeroImg} alt="hero image" />
-                <h1 className="text-[20px] lg:text-2xl text-white/30  mt-8 text-center leading-5  mx-auto ">Trusted by worlds largest companies including...</h1>
+                    <img className="h-auto rounded-3xl border-[8px] border-gray-400/60 w-[80vw] mx-auto" src={HeroImg} alt="hero image" />
+                    <h1 className="text-[20px] lg:text-xl text-white/30  mt-14 mb-3 text-center leading-5  mx-auto ">Trusted by worlds largest companies including...</h1>
 
 
-                <div className="flex flex-wrap mx-5 my-10 justify-center items-center lg:gap-16 pb-14  gap-7">
-                    
-                    <img src={br1} alt="spotify" className="opacity-50 transition hover:opacity-100" />
-                    <img src={br2} alt="spotify" className="opacity-50 transition hover:opacity-100"/>
-                    <img src={br3} alt="spotify" className="opacity-50 transition hover:opacity-100"/>
-                    <img src={br4} alt="spotify" className="opacity-50 transition hover:opacity-100" />
-                    <img src={br5} alt="spotify" className="opacity-50 transition hover:opacity-100" />
-                    <img src={br6} alt="spotify" className="opacity-50 transition hover:opacity-100" />
-                    <img src={br7} alt="spotify" className="opacity-50 transition hover:opacity-100" />
+                    <div className="flex flex-wrap mx-5 md:mx-20  md:gap-14 my-10 justify-center items-center lg:gap-16 pb-14   gap-7">
+
+                        <img src={br1} alt="spotify" className="opacity-50  transition hover:opacity-100" />
+                        <img src={br2} alt="spotify" className="opacity-50 transition hover:opacity-100" />
+                        <img src={br3} alt="spotify" className="opacity-50 transition hover:opacity-100" />
+                        <img src={br4} alt="spotify" className="opacity-50 transition hover:opacity-100" />
+                        <img src={br5} alt="spotify" className="opacity-50 transition hover:opacity-100" />
+                        <img src={br6} alt="spotify" className="opacity-50 transition hover:opacity-100" />
+                        <img src={br7} alt="spotify" className="opacity-50 transition hover:opacity-100" />
+                    </div>
+
+
+
+                    <div className="hero-glow-bg absolute bottom-0 left-0 w-full h-full -z-10">
+
+                    </div>
                 </div>
-
-
-
-                  <div className="hero-glow-bg absolute bottom-0 left-0 w-full h-full -z-10">
-        
-                </div>
-              </div>
 
             </section>
-          
+
         </main>
     );
 };
