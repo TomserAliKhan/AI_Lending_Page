@@ -16,6 +16,10 @@
             background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 67.58%, rgba(255, 255, 255, 0) 100%);
 }
 
+.benefits-bg{
+        background: linear-gradient(216deg, #a2e4e4 0%, #1c9ef6 100%);
+}
+
 /* ===================================
    Animation Keyframes
    =================================== */
