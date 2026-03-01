@@ -1,7 +1,7 @@
 import { useTheme } from "next-themes";
 
-import logoBlack from "/public/logo-black.svg";
-import logoWhite from "/public/logo-white.svg";
+import logoBlack from "/logo-black.svg";
+import logoWhite from "/logo-white.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import DropdownArrow from "../utils/DropdownArrow";

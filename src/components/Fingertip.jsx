@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from 'react'
-import { fingurtipdata } from '../assets/datas.js'
+
 import { Link } from 'react-router-dom'
 import { useTheme } from 'next-themes'
+import { fingurtipdata } from '../assets/datas';
 
 
 const Fingertip = () => {
-  let data = fingurtipdata
+  let data =fingurtipdata
   const [image, setImage] = useState('')
 
 
   const { theme, setTheme } = useTheme();
-console.log(theme);
+
 
 // helper updates image based on the current theme using the data item's paths
 let imagedark = (item) => {
@@ -20,17 +21,17 @@ let imagedark = (item) => {
     setImage(item.path);
   }
 };
-
+let newtheme =fingurtipdata[0].path
 useEffect(() => {
   
-  if (data && data.length) {
+  
     if (theme === 'dark') {
       setImage(data[0].darkPath);
     } else {
       setImage(data[0].path);
     }
-  }
-}, [theme, data]);
+  
+}, [theme]);
   return (
     <div className='my-20 bg-white mx-auto dark:bg-gray-900 sm:max-w-xl md:max-w-fit px-6'>
       <div className="max-w-4xl mx-auto px-5 ">
