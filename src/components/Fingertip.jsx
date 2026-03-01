@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { fingurtipdata } from '../assets/datas'
+import { fingurtipdata } from '../assets/datas.js'
 import { Link } from 'react-router-dom'
 import { useTheme } from 'next-themes'
 
@@ -12,37 +12,25 @@ const Fingertip = () => {
   const { theme, setTheme } = useTheme();
 console.log(theme);
 
-let imagedark=(path)=>{
-  let imagePath = path
-  if (theme ==='dark') {
-    setImage(imagePath.replace(".jpg", "-dark.jpg"))
+// helper updates image based on the current theme using the data item's paths
+let imagedark = (item) => {
+  if (theme === 'dark') {
+    setImage(item.darkPath);
+  } else {
+    setImage(item.path);
   }
-  if(theme==="light"){
-    setImage( imagePath.replace("-dark.jpg",".jpg"))
-  }
+};
 
-}
-  useEffect(() => {
-    let imagePath = '/src/assets/tab-img/tab-image-1.jpg'
-    if (theme ==='dark') {
-      setImage(imagePath.replace(".jpg", "-dark.jpg"))
-    }
-    
-    if(theme==="light"){
-      setImage( imagePath.replace("-dark.jpg",".jpg"))
-    }
-
+useEffect(() => {
   
- 
-
-  },[theme]
-)
-
-
-
-
-
-
+  if (data && data.length) {
+    if (theme === 'dark') {
+      setImage(data[0].darkPath);
+    } else {
+      setImage(data[0].path);
+    }
+  }
+}, [theme, data]);
   return (
     <div className='my-20 bg-white mx-auto dark:bg-gray-900 sm:max-w-xl md:max-w-fit px-6'>
       <div className="max-w-4xl mx-auto px-5 ">
@@ -55,7 +43,7 @@ let imagedark=(path)=>{
             return (
               <Link key={index} className={`flex  justify-start  gap-3 my-2  rounded-lg w-44 ms-5 items-center ${
            
-                item.path === image || item.darkPath===image ? "bg-white/50 border-[0.5]   ":''}`} onClick={() => imagedark(item.path)}>
+                item.path === image || item.darkPath===image ? "bg-white/50 border-[0.5]   ":''}`} onClick={() => imagedark(item)}>
                 <img src={item.img} alt={item.text} />
                 <span>{item.text}</span>
               </Link>

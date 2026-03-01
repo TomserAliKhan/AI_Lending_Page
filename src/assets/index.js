@@ -93,6 +93,5 @@ export { default as user6 } from './user/user-6.png';
 
 
 
-export { default as logoBlack } from './logo-black.svg';
-export { default as logoWhite } from './logo-white.svg';
+
 

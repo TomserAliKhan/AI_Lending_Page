@@ -1,4 +1,4 @@
-import { code, email, imgIcon, message, tabImage1, tabImage1Dark, tabImage2, tabImage2Dark, tabImage3, tabImage3Dark, tabImage4, tabImage4Dark, tabImage5, tabImage5Dark, video } from ".";
+import { code, email, imgIcon, message, tabImage1, tabImage1Dark, tabImage2, tabImage2Dark, tabImage3, tabImage3Dark, tabImage4, tabImage4Dark, tabImage5, tabImage5Dark, video } from "./index.js";
 
 export let navdata=[
   {label:"Home",link:"/home", subdata:[]},
