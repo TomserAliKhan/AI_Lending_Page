@@ -54,7 +54,7 @@ let imagedark=(path)=>{
             return (
               <Link key={index} className={`flex  justify-start  gap-3 my-2  rounded-lg w-44 ms-5 items-center ${
            
-                image.includes(item.path) ? "bg-white/50 border-4 border-red-600 ":''}`} onClick={() => imagedark(item.path)}>
+                item.path === image || item.darkPath===image ? "bg-white/50 border-[0.5]   ":''}`} onClick={() => imagedark(item.path)}>
                 <img src={item.img} alt={item.text} />
                 <span>{item.text}</span>
               </Link>

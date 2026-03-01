@@ -43,7 +43,7 @@ const Features = () => {
                     Precision and Intelligence.</p>
             </div>
 <div className='w-full lg:px-10 px-5'>
-            <div className=' justify-start items-center gap-6 lg:mx-5 lg:gap-20 grid grid-cols-1 md:grid-cols-2 '>
+            <div className=' justify-start items-center gap-6 lg:mx-5 lg:gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  '>
                 {features.map((item, index) => {
                     return (
                         <div key={index} className='rounded-xl  shadow-lg p-9 border dark:border-gray-500/70 px-10   max-w-2xl h-full flex flex-col justify-center items-start '>
