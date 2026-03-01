@@ -1,3 +1,4 @@
+import Benefits from "./components/benefits"
 import Features from "./components/Features"
 import Fingertip from "./components/Fingertip"
 import Herosection from "./components/Herosection"
@@ -17,6 +18,7 @@ function App() {
  <Herosection/>
  <Features/>
  <Fingertip/>
+ <Benefits/>
 
 
     </>

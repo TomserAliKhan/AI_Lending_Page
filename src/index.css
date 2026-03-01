@@ -15,3 +15,25 @@
 .tab-img-overlay {
             background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 67.58%, rgba(255, 255, 255, 0) 100%);
 }
+
+/* ===================================
+   Animation Keyframes
+   =================================== */
+
+@keyframes slideInLeft {
+  0%,100% {
+
+    transform: translateX(-20px);
+    transform: translateY(20px);
+  }
+  50% {
+ 
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+}
+
+
+.animate-slide {
+  animation: slideInLeft 5s ease-in-out infinite;
+}

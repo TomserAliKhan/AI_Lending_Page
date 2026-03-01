@@ -14,6 +14,14 @@ export { default as br6 } from './brand/br-6.svg';
 export { default as br7 } from './brand/br-7.svg';
 
 // ===================================
+// Animate Assets
+// ===================================
+export { default as animShapeLeft1 } from './animate/shape-left-1.svg';
+export { default as animShapeLeft2 } from './animate/shape-left-2.svg';
+export { default as animShapeRight1 } from './animate/shape-right-1.svg';
+export { default as animShapeRight2 } from './animate/shape-right-2.svg';
+
+// ===================================
 // Benefits Assets
 // ===================================
 export { default as blurShape } from './benefits/blur-shape.png';
