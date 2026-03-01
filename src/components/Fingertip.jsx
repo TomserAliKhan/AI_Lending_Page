@@ -3,6 +3,7 @@ import { fingurtipdata } from '../assets/datas'
 import { Link } from 'react-router-dom'
 import { useTheme } from 'next-themes'
 
+
 const Fingertip = () => {
   let data = fingurtipdata
   const [image, setImage] = useState('')
