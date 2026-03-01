@@ -7,18 +7,18 @@ import { fingurtipdata } from '../assets/datas';
 
 const Fingertip = () => {
   let data =fingurtipdata
-  const [image, setImage] = useState('')
+  const [image, setImage] = useState(null)
 
 
   const { theme, setTheme } = useTheme();
 
 
 // helper updates image based on the current theme using the data item's paths
-let imagedark = (item) => {
+let imagedark = (darkPath, path) => {
   if (theme === 'dark') {
-    setImage(item.darkPath);
+    setImage(darkPath);
   } else {
-    setImage(item.path);
+    setImage(path);
   }
 };
 let newtheme =fingurtipdata[0].path
@@ -44,7 +44,7 @@ useEffect(() => {
             return (
               <Link key={index} className={`flex  justify-start  gap-3 my-2  rounded-lg w-44 ms-5 items-center ${
            
-                item.path === image || item.darkPath===image ? "bg-white/50 border-[0.5]   ":''}`} onClick={() => imagedark(item)}>
+                item.path === image || item.darkPath===image ? "bg-white/50 border-[0.5]   ":''}`} onClick={() => imagedark(item.darkPath,item.path)} >
                 <img src={item.img} alt={item.text} />
                 <span>{item.text}</span>
               </Link>
