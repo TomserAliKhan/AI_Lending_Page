@@ -1,5 +1,5 @@
 
-import Benefits from "./components/benefits"
+import Benefits from "./components/Benefits"
 import Features from "./components/Features"
 import Fingertip from "./components/Fingertip"
 import Herosection from "./components/Herosection"
@@ -8,7 +8,7 @@ import UserExperiance from "./components/UserExperiance"
 
 
 
-
+S
 function App() {
 
 
