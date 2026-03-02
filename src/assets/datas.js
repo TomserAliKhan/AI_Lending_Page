@@ -1,4 +1,4 @@
-import { code, email, imgIcon, message, tabImage1, tabImage1Dark, tabImage2, tabImage2Dark, tabImage3, tabImage3Dark, tabImage4, tabImage4Dark, tabImage5, tabImage5Dark, video } from "./index.js";
+import { code, email, imgIcon, message, tabImage1, tabImage1Dark, tabImage2, tabImage2Dark, tabImage3, tabImage3Dark, tabImage4, tabImage4Dark, tabImage5, tabImage5Dark, user1, user2, user3, user4, user5, user6, video } from "./index.js";
 
 export let navdata=[
   {label:"Home",link:"/home", subdata:[]},
@@ -34,3 +34,27 @@ export let fingurtipdata=[
     {img:video,text:"Video Generator",path:tabImage4, darkPath: tabImage4Dark},
     {img:email,text:"Email Generator", path:tabImage5, darkPath: tabImage5Dark}
   ]
+
+  export let  userData=[{name:"Ralph Edwards",
+    img:user1,company:"Big Kahuna Burger Ltd",
+    disc:"As a Senior Software Developer I found TailAdmin perfect write code that easy can be used in my projects, which some are production already."
+  },{name:"Albert Flores",
+    img:user2,company:"Big Kahuna Burger Ltd",
+    disc:"As a Senior Software Developer I found TailAdmin perfect write code that easy can be used in my projects, which some are production already."}
+  ,{
+    name:"Jacob Jones",
+    img:user3,company:"Big Kahuna Burger Ltd",
+    disc:"As a Senior Software Developer I found TailAdmin perfect write code that easy can be used in my projects, which some are production already."
+  },{
+    name:"Jenny Wilson",
+    img:user4,company:"Big Kahuna Burger Ltd",
+    disc:"As a Senior Software Developer I found TailAdmin perfect write code that easy can be used in my projects, which some are production already." 
+  },{ 
+    name:"Courtney Henry",
+    img:user5,company:"Big Kahuna Burger Ltd",
+    disc:"As a Senior Software Developer I found TailAdmin perfect write code that easy can be used in my projects, which some are production already."
+  },{
+    name:"Dianne Russell",
+    img:user6,company:"Big Kahuna Burger Ltd",
+    disc:"As a Senior Software Developer I found TailAdmin perfect write code that easy can be used in my projects, which some are production already."
+  }]

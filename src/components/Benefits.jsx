@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Benefits = () => {
   return (
-    <div className='bg-black pt-10 text-white  mx-auto' >
+    <div className='bg-black pt-10 text-white pb-10 mx-auto' >
         <div className='mx-auto  md:max-w-xl py-5 px-5 text-center'>
             <h2 className='text-center text-3xl lg:text-5xl font-bold '>The key benefits of using our tools.</h2>
             <p className='py-6 lg:text-lg text-gray-400'>
