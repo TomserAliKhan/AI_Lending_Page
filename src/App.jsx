@@ -1,3 +1,4 @@
+
 import Benefits from "./components/benefits"
 import Features from "./components/Features"
 import Fingertip from "./components/Fingertip"
@@ -20,7 +21,7 @@ function App() {
  <Features/>
  <Fingertip/>
  <Benefits/>
- <UserExperiance/>
+  <UserExperiance/>
 
 
     </>
