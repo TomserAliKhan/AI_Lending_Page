@@ -20,24 +20,60 @@
         background: linear-gradient(216deg, #a2e4e4 0%, #1c9ef6 100%);
 }
 
-/* ===================================
-   Animation Keyframes
-   =================================== */
 
-@keyframes slideInLeft {
-  0%,100% {
 
-    transform: translateX(-20px);
-    transform: translateY(20px);
+@keyframes float {
+  0% {
+    transform: translateY(0px);
   }
   50% {
- 
-    transform: translateX(0);
-    transform: translateY(0);
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
-
-
-.animate-slide {
-  animation: slideInLeft 5s ease-in-out infinite;
+@keyframes float-y {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes float-x {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+@keyframes float-xy {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, -10px);
+  }
+}
+@keyframes float-rev {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+.floating-1 {
+  animation: float-y 3s ease-in-out infinite;
+}
+.floating-2 {
+  animation: float-x 4s ease-in-out infinite;
+}
+.floating-3 {
+  animation: float-xy 5s ease-in-out infinite;
+}
+.floating-4 {
+  animation: float-rev 6s ease-in-out infinite;
 }

@@ -66,6 +66,8 @@ export { default as robot } from './svgs/robot.svg';
 
 export { default as video } from './svgs/video.svg';
 export { default as arrow } from './svgs/arrow.svg';
+export { default as plus } from './svgs/plus.svg';
+export { default as minas } from './svgs/minas.svg';
 
 // ===================================
 // Tab Image Assets
@@ -90,6 +92,11 @@ export { default as user3 } from './user/user-3.png';
 export { default as user4 } from './user/user-4.png';
 export { default as user5 } from './user/user-5.png';
 export { default as user6 } from './user/user-6.png';
+
+
+export { default as notfoundD} from './error/404.svg';
+export { default as notfoundW} from './error/404-white.svg';
+
 
 
 

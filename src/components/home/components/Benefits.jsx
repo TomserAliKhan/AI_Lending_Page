@@ -1,6 +1,6 @@
 import React from 'react'
-import Animation from '../utils/Animation'
-import {  blurShape, bn1, bn2, bn3 } from '../assets'
+import Animation from '../../../utils/Animation'
+import {  blurShape, bn1, bn2, bn3 } from '../../../assets'
 import { Link } from 'react-router-dom'
 
 const Benefits = () => {

@@ -41,7 +41,7 @@ const DropdownArrow = ({
         </svg>
       </button>
       <div
-        className={` lg:absolute lg:border lg:rounded-md lg:bg-white dark:lg:bg-black lg:shadow-lg lg:w-[300px] lg:py-2 lg:z-10 ${isOpen ? "block" : "hidden"}`}
+        className={` lg:absolute lg:border lg:rounded-md lg:bg-white dark:lg:bg-black lg:shadow-lg lg:w-[300px] lg:py-2 lg:z-10 ${isOpen ? "block pt-3" : "hidden"}`}
         onMouseEnter={() => setIsOpen(()=>isMobile ? false : true)}
         onMouseLeave={() => setIsOpen(()=>isMobile ? false :false)}
       >
@@ -51,7 +51,7 @@ const DropdownArrow = ({
             if (item.img)
               return (
                 <Link to={item.link} 
-                className="flex items-center lg:w-22 lg:h-10  lg:my-2 lg:ps-8 lg:py-2 lg:hover:bg-gray-100 dark:lg:hover:bg-gray-700">
+                className="flex py-1 items-center lg:w-22 lg:h-10  lg:my-2 lg:ps-8 lg:py-2 lg:hover:bg-gray-100 dark:lg:hover:bg-gray-700">
                   <img key={i} src={item.img} alt={item.text || `item-${i}`} />
                   <span>{item.text}</span>
                 </Link>
@@ -59,7 +59,7 @@ const DropdownArrow = ({
             return (
               <Link
                 to={item.link}
-                className="flex flex-col lg:flex-row ps-6 lg:my-2 lg:ps-8 dark:lg:hover:bg-gray-700 lg:py-2 lg:hover:bg-gray-100"
+                className="flex p-2  flex-col lg:flex-row ps-6 lg:my-2 lg:ps-8 dark:lg:hover:bg-gray-700 lg:py-2 lg:hover:bg-gray-100"
                 key={i}
               >
                 {item.text}

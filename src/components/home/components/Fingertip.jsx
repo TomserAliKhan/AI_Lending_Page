@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import { Link } from 'react-router-dom'
 import { useTheme } from 'next-themes'
-import { fingurtipdata } from '../assets/datas';
+import { fingurtipdata } from '../../../assets/datas';
 
 
 const Fingertip = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { note, idea, robot, messageE, premium, electricity } from '../assets'
+import { note, idea, robot, messageE, premium, electricity } from '../../../assets'
 
 const Features = () => {
 

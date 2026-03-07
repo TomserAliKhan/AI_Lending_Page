@@ -1,16 +1,22 @@
 import React from "react";
-import { br1, br2, br3, br4, br5, br6, br7, heroDarkImg, heroImg } from "../assets";
+import { animShapeLeft1, animShapeLeft2, animShapeRight1, animShapeRight2, br1,br2, br3, br4, br5, br6, br7, heroDarkImg, heroImg } from "../../../assets";
 import { useTheme } from "next-themes";
+
 
 
 const Herosection = () => {
     const { theme, setTheme } = useTheme();
     let HeroImg = theme === "dark" ? heroDarkImg : heroImg;
+    
 
     return (
         <main className=" ">
             <section >
-                <div className="mt-16  w-full ">
+                <div className="mt-16  w-full  relative">
+                    <span className="hidden lg:block  absolute left-10 floating-1"><img src={animShapeLeft1}  /></span>
+                    <span className="hidden lg:block absolute left-20 top-56 floating-2"><img src={animShapeLeft2}  /></span>
+                    <span className="hidden lg:block  absolute right-10 floating-3"><img src={animShapeRight1}  /></span>
+                    <span className="hidden lg:block  absolute right-20 top-52 floating-4"><img src={animShapeRight2}  /></span>
                     <div className="lg:w-[650px] mx-auto flex flex-col justify-center items-center ">
                         <span className="rounded-full p-[1px] bg-gradient-to-r from-pink-500 to-purple-500">
                             <span className="flex text-[10px]  gap-3 bg-white dark:bg-gray-900 rounded-full overflow-hidden px-4 py-2 items-center">
