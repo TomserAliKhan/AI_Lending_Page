@@ -48,7 +48,7 @@ console.log(form);
   const [ispasseordShow, setPasseordShow] = useState(true);
   return (
     <div className={`mx-auto pb-9 mt-5 ${theme === "dark" ? "" : "hero-glow-bg"} `}>
-      <div className="flex pt-20  flex-col  md:max-w-[650px] shadow-2xl rounded-xl   mx-4 md:mx-auto bg-white  dark:bg-black justify-center pb-5 md:pb-10">
+      <div className="flex pt-20  max-w-[600px] px-4  flex-col  md:max-w-[650px] shadow-2xl rounded-xl   mx-4 md:mx-auto bg-white  dark:bg-black justify-center pb-5 md:pb-10">
         <div className="text-center max-w-64 md:max-w-[500px] mx-auto">
           <h1 className="text-3xl font-bold py-2">Sign In</h1>
           <p className="pb-2">Enter your details to create a account</p>

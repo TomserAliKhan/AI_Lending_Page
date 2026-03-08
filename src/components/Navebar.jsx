@@ -113,7 +113,7 @@ console.log(userData);
           </span>
         </div>
 
-           <div className="bg-gray-500 rounded-lg w-64 absolute right-0 top-[70px]   h-40">
+           <div className="bg-gray-500 rounded-lg w-64 absolute right-0 top-[70px] hidden   h-40">
         
       </div>
       

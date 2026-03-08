@@ -5,12 +5,14 @@ export const authSlice=createSlice({
     name:"auth",
     initialState:{
         accessToken:'',
-        isLoggedIn:true,
+        isLoggedIn:false,
         value:0,
-        user:[ {name:'rahul khan',
-            email:"rahul00@GiMailShirt.com",
-            avtar:"/user-1.png"
-            }]
+        user:[
+        //  {name:'rahul khan',
+        //     email:"rahul00@GiMailShirt.com",
+        //     avtar:"/user-1.png"
+        //     }
+        ]
     },
     reducers:{
         increment:(state)=>{
