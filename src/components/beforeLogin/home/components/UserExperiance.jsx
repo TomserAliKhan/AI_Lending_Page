@@ -1,6 +1,6 @@
 
-import UserCard from '../../../utils/UserCard'
-import { userData } from '../../../assets/datas'
+import UserCard from '../../../../utils/UserCard'
+import { userData } from '../../../../assets/datas'
 
 const UserExperiance = () => {
   return (

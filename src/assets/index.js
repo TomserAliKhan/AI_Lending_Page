@@ -73,15 +73,15 @@ export { default as minas } from './svgs/minas.svg';
 // Tab Image Assets
 // ===================================
 export { default as tabImage1Dark } from './tab-img/tab-image-1-dark.jpg';
-export { default as tabImage1 } from './tab-img/tab-image-1.jpg';
+export { default as tabImage1 } from './tab-img/tab-image-1-light.jpg';
 export { default as tabImage2Dark } from './tab-img/tab-image-2-dark.jpg';
-export { default as tabImage2 } from './tab-img/tab-image-2.jpg';
+export { default as tabImage2 } from './tab-img/tab-image-2-light.jpg';
 export { default as tabImage3Dark } from './tab-img/tab-image-3-dark.jpg';
-export { default as tabImage3 } from './tab-img/tab-image-3.jpg';
+export { default as tabImage3 } from './tab-img/tab-image-3-light.jpg';
 export { default as tabImage4Dark } from './tab-img/tab-image-4-dark.jpg';
-export { default as tabImage4 } from './tab-img/tab-image-4.jpg';
+export { default as tabImage4 } from './tab-img/tab-image-4-light.jpg';
 export { default as tabImage5Dark } from './tab-img/tab-image-5-dark.jpg';
-export { default as tabImage5 } from './tab-img/tab-image-5.jpg';
+export { default as tabImage5 } from './tab-img/tab-image-5-light.jpg';
 
 // ===================================
 // User Assets

@@ -5,8 +5,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Layout from "./components/Layout";
-import Home from "./components/home/Home";
+import Home from './components/beforeLogin/home/Home'
 import Chat from "./routes/Chat";
 import Signup from "./routes/Signup";
 import SignIn from "./routes/SignIn";
@@ -16,6 +15,7 @@ import Contect from "./routes/Contect";
 import Pricing from "./routes/Pricing";
 import Policy from "./routes/Policy";
 import Notfound from "./routes/404";
+import Layout from "./components/beforeLogin/home/components/Layout";
 
 function App() {
   let route = createBrowserRouter(

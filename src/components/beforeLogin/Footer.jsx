@@ -1,11 +1,11 @@
 import React from 'react'
-import { blurShape } from '../assets'
+import { blurShape } from '../../assets'
 import { PiLinkedinLogoThin } from 'react-icons/pi'
 import { BsDiscord, BsFacebook, BsTwitter, BsTwitterX } from 'react-icons/bs'
 import { BiX } from 'react-icons/bi'
 import { GrGithub } from 'react-icons/gr'
 import { Link } from 'react-router-dom'
-import { footer } from '../assets/datas'
+import { footer } from '../../assets/datas'
 
 const Footer = () => {
   return (

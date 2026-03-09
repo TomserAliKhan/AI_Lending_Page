@@ -1,11 +1,11 @@
 import React from 'react'
-import Herosection from './components/Herosection'
+import Herosection from './Herosection'
 import Benefits from './components/Benefits'
 import Features from './components/Features'
-import Fingertip from './components/Fingertip'
+import Fingertip from './components/Fingertips'
 import UserExperiance from './components/UserExperiance'
-import Price from '../Price'
-import Quations from '../Questions'
+import Price from './components/Price'
+import Quations from './components/Questions'
 
 
 const Home = () => {

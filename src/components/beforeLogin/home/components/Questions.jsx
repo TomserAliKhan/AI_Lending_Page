@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { minas, plus } from '../assets'
-import { QA } from '../assets/datas'
+import { minas, plus, QA } from '../../../../assets/datas';
+import { Form } from 'react-router-dom'
 
 
 const Questions = () => {

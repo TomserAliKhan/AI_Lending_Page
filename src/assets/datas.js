@@ -1,4 +1,4 @@
-import { code, email, imgIcon, message, tabImage1, tabImage1Dark, tabImage2, tabImage2Dark, tabImage3, tabImage3Dark, tabImage4, tabImage4Dark, tabImage5, tabImage5Dark, user1, user2, user3, user4, user5, user6, video } from "./index.js";
+import { code, email, imgIcon, message, tabImage1, tabImage1Dark, tabImage2, tabImage2Dark, tabImage3, tabImage3Dark, tabImage4, tabImage4Dark, tabImage5, tabImage5Dark, user1, user2, user3, user4, user5, user6, video,note, idea, robot, messageE, premium, electricity, plus, minas } from "./index.js";
 
 export let navdata = [
   { label: "Home", link: "/", subdata: [] },
@@ -137,4 +137,7 @@ export let footer=[
   {row3:['Account','Login','Sign Up','Reset Password','Support']}
   
 ]
+
+// export icons for components that rely on them
+export { note, idea, robot, messageE, premium, electricity, plus, minas };
 

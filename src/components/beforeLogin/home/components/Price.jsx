@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { prices } from '../assets/datas'
+import { prices } from '../../../../assets/datas'
 import { data } from 'react-router-dom'
 
 const Price = () => {
