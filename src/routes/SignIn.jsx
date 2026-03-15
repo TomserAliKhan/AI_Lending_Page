@@ -6,11 +6,16 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import { FaGoogle } from "react-icons/fa6";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const SignIn = () => {
-
+  let navigate=useNavigate()
+  let auth=useSelector((state)=>state.auth.isLoggedIn)
+  if (auth) {
+    navigate('/dashboard')  
+  }
+  
 
 
 

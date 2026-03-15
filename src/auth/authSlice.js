@@ -9,8 +9,8 @@ export const authSlice=createSlice({
         value:0,
         user:[
           {name:'rahul khan',
-             email:"rahul00@GiMailShirt.com",
-             avtar:"/user-1.png"
+           email:"rahul00@GiMailShirt.com",
+            avtar:"/user-1.png"
         }
         ]
     },

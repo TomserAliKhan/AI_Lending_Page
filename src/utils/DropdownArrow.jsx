@@ -4,11 +4,8 @@ import { useViewport } from "./useViewport";
 
 const DropdownArrow = ({
   label = "Menu",
-  bgColor = "",
-  link,
+itemClass,
   data,
-  textSize = "",
-  textColor = "",
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const isMobile=useViewport()
@@ -21,9 +18,9 @@ const DropdownArrow = ({
         onMouseEnter={() => setIsOpen(()=>isMobile ? false : true)}
         onMouseLeave={() => setIsOpen(()=>isMobile ? false : false)}
 
-        className={`flex  justify-between  lg:h-10 lg:justify-center w-[90vw] lg:w-auto transition-colors items-center h-[30px]  lg:pb-5 relative  ${bgColor} ${textSize} ${textColor} hover:opacity-80`}
+        className={`flex  justify-between  lg:h-10 lg:justify-center w-full  lg:w-auto transition-colors items-center h-[30px]  lg:pb-5  relative  hover:opacity-80`}
       >
-        <span className=" hover:text-blue-400">{label}</span>
+        <span className={`${itemClass}`}>{label}</span>
 
         <svg
           className={`ml-1 h-4 w-4 transition-transform duration-200  ${isOpen ? "rotate-180" : "rotate-0"}`}
@@ -41,7 +38,9 @@ const DropdownArrow = ({
         </svg>
       </button>
       <div
-        className={` lg:absolute lg:border lg:rounded-md lg:bg-white dark:lg:bg-black lg:shadow-lg lg:w-[300px] lg:py-2 lg:z-10 ${isOpen ? "block pt-3" : "hidden"}`}
+        className={` lg:absolute lg:border lg:rounded-md 
+           
+           lg:shadow-lg lg:w-[300px] lg:py-2 lg:z-10 ${isOpen ? "block pt-3" : "hidden"}`}
         onMouseEnter={() => setIsOpen(()=>isMobile ? false : true)}
         onMouseLeave={() => setIsOpen(()=>isMobile ? false :false)}
       >
@@ -51,7 +50,7 @@ const DropdownArrow = ({
             if (item.img)
               return (
                 <Link to={item.link} 
-                className="flex py-1 items-center lg:w-22 lg:h-10  lg:my-2 lg:ps-8 lg:py-2 lg:hover:bg-gray-100 dark:lg:hover:bg-gray-700">
+                className="flex py-1 items-center lg:w-22 lg:h-10  lg:my-2 lg:ps-8 lg:py-2 lg:hover:bg-gray-100  dark:lg:hover:bg-gray-700 ">
                   <img key={i} src={item.img} alt={item.text || `item-${i}`} />
                   <span>{item.text}</span>
                 </Link>

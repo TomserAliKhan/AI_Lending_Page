@@ -7,29 +7,19 @@ import { fingurtipdata } from '../../../../assets/datas';
 
 const Fingertip = () => {
   let data =fingurtipdata
-  const [image, setImage] = useState(null)
+  const [image, setImage] = useState({
+    path:'',
+    darkpath:''
+  })
 
 
   const { theme, setTheme } = useTheme();
-
-
-// helper updates image based on the current theme using the data item's paths
-let imagedark = (darkPath, path) => {
-  if (theme === 'dark') {
-    setImage(darkPath);
-  } else {
-    setImage(path);
-  }
-};
-let newtheme =fingurtipdata[0].path
 useEffect(() => {
   
   
     if (theme === 'dark') {
-      setImage(data[0].darkPath);
-    } else {
-      setImage(data[0].path);
-    }
+      setImage({darkpath:data[0].darkPath,path:data[0].path});
+    } 
   
 }, [theme]);
   return (
@@ -44,7 +34,12 @@ useEffect(() => {
             return (
               <Link key={index} className={`flex  justify-start  gap-3 my-2  rounded-lg w-44 ms-5 items-center ${
            
-                item.path === image || item.darkPath===image ? "bg-white/50 border-[0.5]   ":''}`} onClick={() => imagedark(item.darkPath,item.path)} >
+                item.path === image.path || item.darkPath===image.darkpath ? "bg-white/50 border-[0.5]   ":''}`} 
+                onClick={()=>{
+                  setImage({path:item.path,darkpath:item.darkPath})
+                  console.log(image);
+                  
+                }} >
                 <img src={item.img} alt={item.text} />
                 <span>{item.text}</span>
               </Link>
@@ -55,7 +50,7 @@ useEffect(() => {
 
       <div className='tab-img-bg rounded-xl mx-auto px-7 pt-6'>
         <div className='mx-auto px-3 pt-3 rounded-xl tab-img-overlay  '>
-          <img className='rounded-xl ' src={image} alt="image" />
+          <img className='rounded-xl ' src={theme=='dark'?image.darkpath:image.path} alt="image" />
         </div>
       </div>
 

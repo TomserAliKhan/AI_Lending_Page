@@ -69,6 +69,8 @@ export { default as arrow } from './svgs/arrow.svg';
 export { default as plus } from './svgs/plus.svg';
 export { default as minas } from './svgs/minas.svg';
 
+
+
 // ===================================
 // Tab Image Assets
 // ===================================

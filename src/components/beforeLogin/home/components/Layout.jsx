@@ -1,9 +1,12 @@
 import React from 'react'
-import Footer from '../../Footer'
-import Navebar from '../../../Navebar'
-import { Outlet } from 'react-router-dom'
+import Navebar from '../../Navebar'
+import  Footer from '../../Footer'
+import {  Outlet } from 'react-router-dom'
+
+
 
 const Layout = () => {
+
   return (
     <>
     <Navebar/>

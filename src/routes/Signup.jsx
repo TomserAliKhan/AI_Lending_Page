@@ -5,10 +5,19 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import { FaGoogle } from "react-icons/fa6";
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const Signup = () => {
+
+    let navigate=useNavigate()
+  let auth=useSelector((state)=>state.auth.isLoggedIn)
+  if (auth) {
+    navigate('/dashboard')  
+  }
+  
+
+
   let { theme } = useTheme();
   const [form, setform] = useState({
     firstName:'',
@@ -18,9 +27,7 @@ const Signup = () => {
     agree:false
    
   });
-  let handleCheck=(e)=>{
-    console.log(e.target.value)
-  }
+  
 
   let handleChange=(e)=>{
 

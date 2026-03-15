@@ -17,7 +17,7 @@ if (!auth) {
   navigate('/sign-in')
 }
 
-console.log(auth);
+
 
   return (
    <>
