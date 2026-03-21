@@ -6,7 +6,7 @@ import { setContent as rightSetContent } from "../../../redux/rightSlice";
 import { navdata } from "../../../assets/datas";
 import { useTheme } from "next-themes";
 import { IoIosSearch } from "react-icons/io";
-import { chatConversations } from "./chatDBjsonData";
+
 
 const ChatLayout = () => {
   const content = useSelector((state) => state.leftHum.content);
@@ -116,7 +116,7 @@ const ChatLayout = () => {
 
           <div>
             {
-              chatConversations.length >0 && <p className="py-5 text-sm text-gray-500">Recent Conversations</p>
+           
             }
             
           </div>
