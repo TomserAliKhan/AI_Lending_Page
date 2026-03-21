@@ -18,7 +18,7 @@ itemClass,
         onMouseEnter={() => setIsOpen(()=>isMobile ? false : true)}
         onMouseLeave={() => setIsOpen(()=>isMobile ? false : false)}
 
-        className={`flex  justify-between  lg:h-10 lg:justify-center w-full  lg:w-auto transition-colors items-center h-[30px]  lg:pb-5  relative  hover:opacity-80`}
+        className={`flex  justify-between  lg:h-10 lg:justify-center w-full  lg:w-auto transition-colors items-center h-[30px]  lg:pb-5  relative  lg:hover:opacity-80`}
       >
         <span className={`${itemClass}`}>{label}</span>
 
@@ -38,9 +38,7 @@ itemClass,
         </svg>
       </button>
       <div
-        className={` lg:absolute lg:border lg:rounded-md 
-           
-           lg:shadow-lg lg:w-[300px] lg:py-2 lg:z-10 ${isOpen ? "block pt-3" : "hidden"}`}
+        className={` lg:absolute lg:border lg:rounded-md lg:shadow-lg lg:w-[300px] lg:py-2 lg:z-10 transform transition-all duration-300 ease-in-out origin-top ${isOpen ? "block pt-3 opacity-100 scale-100" : "hidden opacity-0 scale-95 pointer-events-none"}`}
         onMouseEnter={() => setIsOpen(()=>isMobile ? false : true)}
         onMouseLeave={() => setIsOpen(()=>isMobile ? false :false)}
       >

@@ -77,3 +77,21 @@
 .floating-4 {
   animation: float-rev 6s ease-in-out infinite;
 }
+
+.dashboard-gradient {
+  background-image: linear-gradient( 92deg, var(--Colors-Brand-500, #7a5af8) 0%, var(--Colors-Brand-200, #d9d6fe) 100% );
+}
+
+.widget-bg {
+        background-image: linear-gradient(180deg, #f8fcff 0%, #f1efff 50%, #f8dcff 100%);
+        
+}
+
+.gradient-btn {
+        background-image: linear-gradient(97deg, #725cff 0%, #b5b1ff 140.21%);
+        color: white;
+        background-size: 200% auto;
+      
+     
+       
+}

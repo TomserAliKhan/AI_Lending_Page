@@ -9,8 +9,16 @@ export const authSlice=createSlice({
         value:0,
         user:[
           {name:'rahul khan',
+            isTwoFactor:true,
            email:"rahul00@GiMailShirt.com",
-            avtar:"/user-1.png"
+            avtar:"/user-1.png",
+            activePlan:{
+                plan:"Plus",
+                package:"Plus plan-Annuually",
+                amount:'$240',
+                purchasedOn:'15 jan 2027',
+                status:'Active'
+            }
         }
         ]
     },

@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 const UserMenu = ({isUserMenuOpen,setIsUserMenuOpen,userData}) => {
   return (
-              <div  className={` ${isUserMenuOpen?'block':'hidden'}  fixed h-screen w-screen  right-0 top-[70px] flex `}>
+              <div  className={`fixed h-screen w-screen right-0 top-[70px] flex transition-opacity duration-300 ease-in-out ${isUserMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
             <div onClick={()=>setIsUserMenuOpen(false)} className="bg-transparent w-full left-0 h-screen  ">
 
             </div>
-            <div  className={`  bg-white dark:bg-black rounded-lg text-black dark:text-white w-72 absolute right-6 shadow-2xl  px-5 py-5  `}>
+            <div  className={`bg-white dark:bg-black rounded-lg text-black dark:text-white w-72 absolute right-6 shadow-2xl px-5 py-5 transform transition-all duration-300 ease-in-out ${isUserMenuOpen ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}`}>
              <p className="  pb-1  ">{userData[0].name}</p>
              <p className="pb-6">{userData[0].email}</p>
 

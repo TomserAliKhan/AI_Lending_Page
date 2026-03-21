@@ -1,14 +1,19 @@
 import { code, email, imgIcon, message, tabImage1, tabImage1Dark, tabImage2, tabImage2Dark, tabImage3, tabImage3Dark, tabImage4, tabImage4Dark, tabImage5, tabImage5Dark, user1, user2, user3, user4, user5, user6, video,note, idea, robot, messageE, premium, electricity, plus, minas } from "./index.js";
 
+import {  toast } from 'react-toastify';
+
+export const  errorNotify= (data) => toast.error(data);
+export const  successNotify= (data) => toast.success(data);
+
 export let navdata = [
   { label: "Home", link: "/", subdata: [] },
   {
     label: "Products", link: "", subdata: [
-      { img: message, text: "Text Generator", link: '/text-generator' },
-      { img: imgIcon, text: "Image Generator", link: '/image-generator' },
-      { img: code, text: "Code Generator", link: '/code-generator' },
-      { img: video, text: "Video Generator", link: '/video-generator' },
-      { img: email, text: "Email Generator", link: '/email-generator' }
+      { img: message, text: "Text Generator", link: '/chat/text-generator' },
+      { img: imgIcon, text: "Image Generator", link: '/chat/image-generator' },
+      { img: code, text: "Code Generator", link: '/chat/code-generator' },
+      { img: video, text: "Video Generator", link: '/chat/video-generator' },
+      { img: email, text: "Email Generator", link: '/chat/email-generator' }
 
     ]
   },

@@ -47,6 +47,10 @@ export { default as shapeRight2 } from './hero/shape-right-2.svg';
 // Image Assets
 // ===================================
 export { default as imgHeroDark } from './imgs/hero-img-dark.png';
+export { default as saly } from './imgs/Saly.png'
+
+
+
 
 
 // ===================================
